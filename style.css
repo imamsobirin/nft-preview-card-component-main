@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+:root {
+  --main-bg: hsl(217, 54%, 11%);
+  --card-bg: hsl(216, 50%, 16%);
+  --line: hsl(215, 40%, 27%);
+  --white: hsl(0, 0%, 100%);
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+p {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  background-color: var(--main-bg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  max-width: 300px;
+  background-color: var(--card-bg);
+  border-radius: 15px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.container .text {
+  padding: 20px 0;
+}
+.container img {
+  max-width: 100%;
+  border-radius: 15px;
+}
+.container .text h1 {
+  font-size: 1.2rem;
+  color: var(--white);
+  padding-bottom: 10px;
+}
+
+.container .text p {
+  color: rgba(255, 255, 255, 0.5);
+}
+.container ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  display: flex;
+  border-bottom: 3px solid var(--line);
+  padding-bottom: 20px;
+}
+.container ul li {
+  display: flex;
+  align-items: center;
+  align-self: center;
+}
+.container ul li:first-child {
+  color: var(--cyan);
+  font-weight: 700;
+}
+.container ul li:last-child {
+  color: rgba(255, 255, 255, 0.5);
+}
+.container ul li img {
+  margin-right: 5px;
+}
+
+.user {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
+}
+.user .avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+.user p {
+  font-size: 0.8rem;
+}
+.user p span {
+  color: var(--white);
+}
