@@ -55,9 +55,8 @@ body {
 .container .header-img {
   position: relative;
 }
-.container .header-img img {
+.container .header-img .header {
   max-width: 100%;
-  height: 100%;
   border-radius: 15px;
 }
 
